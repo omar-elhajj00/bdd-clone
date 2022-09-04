@@ -24,9 +24,12 @@ h1 {
     font-family: 'Noto Sans KR',sans-serif;;
     text-transform: uppercase;
     display: flex;
+    position: fixed;
+    z-index: 1000;
     justify-content: space-between;
     height: 110px;
     background-color: rgba(0, 0, 0, 0.24);
+    width: 100%;
 }
 
 .logo{
@@ -48,6 +51,10 @@ h1 {
 .links>li {
     margin-right: 2rem;
     cursor: pointer;
+}
+.links>li:hover {
+    transform: scale(1.02);
+    transition: .2s;
 }
 
 .links>li button {
@@ -150,6 +157,7 @@ h1 {
     font-weight: 300;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
 
 /* vision section */
 .vision-container{
@@ -299,6 +307,65 @@ h1 {
     text-align: center;
     font-size: 1rem;
 }
+/* bdd feautures end */
+
+
+
+/* trending section start */
+.trending-container {
+    background: url(../images/bg-icon-empty.png) no-repeat;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 2rem;
+}
+
+.trending-container .trendings{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+.trending-container .trendings .trending {
+    width: 50vh;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 4rem;
+    justify-content: space-between;
+    background: #f5f5f5;
+    
+}
+.trending-container .trendings .trending img{
+    width: 50vh;
+    height:30vh;
+
+
+}
+
+
+.trending-container .trendings .trending h2 {
+    font-family: 'Maven Pro', sans-serif;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
+.trending-container .trendings .trending p {
+    font-family: 'Maven Pro', sans-serif;
+    text-align: center;
+    font-size: 1rem;
+}
+/* trending section ends */
+
+
+/* academy feautures start */
 
 .academy-container{
     background: url(../images/parallax-7.jpg) no-repeat;
@@ -372,4 +439,9 @@ h1 {
     background-color: rgba(0, 0, 255, 0.863);
     transition: .2s;
 
+}
+
+
+@media screen and (max-width: 992px){
+    
 }
