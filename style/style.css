@@ -75,9 +75,7 @@ img {
     margin-bottom: 40px;
     text-align: center;
     align-items: center;
-
 }
-
 
 /* foundations section */
 .foundations-container{
@@ -88,6 +86,7 @@ img {
     align-items: center;
     font-family: 'Maven Pro', sans-serif;
 }
+
 .foundations-container h1{
     margin: 2rem auto;
     font-size: 2rem;
@@ -97,9 +96,8 @@ img {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
-
 }
+
 .foundations-container .foundations h2{
     margin:2rem auto;
     text-align: center;
@@ -116,15 +114,104 @@ img {
     align-items: center;
     padding: 2rem;
 }
+
+.foundation:hover{
+    background-color: aliceblue;
+    transition: .2s;
+}
 .foundations-container .foundation img{
     width: 7rem;
     height:5.7rem;
-
 }
+
 .foundations-container .foundation p{
     text-align: center;
     color: rgb(61, 61, 61);
     font-weight: 300;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
+}
+
+/* vision section */
+.vision-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(97, 97, 97, 0.397) , rgba(12, 34, 54, 0.322)),url(../images/parallax-4.jpg) no-repeat;  
+    background-size: cover;
+    position : relative;
+    height: 100vh;
+    padding-top: 2rem;  
+}
+
+.vision-container h1{
+    margin: 2rem auto;
+    font-size: 2rem;
+    font-family: 'Maven Pro', sans-serif;
+    margin-bottom: 2rem;
+    color:white;
+}
+
+/* join bdd section */
+.join-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.join-container h1 {
+    margin: 2rem auto;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: 'Maven Pro', sans-serif;
+    margin-bottom: 2rem;
+    color: black;
+}
+
+.join-container .inner-join-container{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.join-container img{
+    height: auto;
+    width: 70vh;
+}
+
+.join-container .inner-join-container .join-ways{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.join-container .inner-join-container .join-ways .join-way {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(206, 206, 206);
+    width: 10rem;
+    height:80vh;
+    margin-left: 1rem;
+    padding: 1rem 1rem;
+}
+
+.join-container .inner-join-container .join-ways .join-way h2 {
+    font-family: 'Maven Pro', sans-serif;
+    text-align: center;
+    font-size: 1.4rem;
+    height: 20vh;
+    margin-top: 0rem;
+}
+
+.join-container .inner-join-container .join-ways .join-way p {
+    font-family:monospace;
+    text-align: center;
+    font-size: 1.4rem;
+    height: 20vh;
+    margin-top: 0rem;
+
 }
