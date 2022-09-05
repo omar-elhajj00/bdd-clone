@@ -31,6 +31,9 @@ h1 {
     background-color: rgba(0, 0, 0, 0.24);
     width: 100%;
 }
+.top-nav .fa-bars {
+    display: none;
+}
 
 .logo{
     margin-left: 3rem ;
@@ -180,6 +183,11 @@ h1 {
     color:white;
 }
 
+.vision-container iframe{
+    width:720px;
+    height:440px;
+
+}
 /* join bdd section */
 .join-container{
     display: flex;
@@ -461,13 +469,28 @@ h1 {
     .hero { 
         width: 100% ;
     }
+    .top-nav .fa-bars {
+        display: block;
+        font-size: 3rem;
+        margin:3rem;
+        
+        color: black;
+    }
+    .top-nav .links{
+        display: none;
+    }
 
 @media screen and (max-width:800px){
     .mobile {
         flex-direction: column;
     }   
     .hero-heading{
-        font-size: 99%;
+        font-size: 99.8%;
+    }
+    .vision-container iframe {
+        width: 480px;
+        height: 240px;
+    
     }
         
     }
